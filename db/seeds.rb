@@ -46,11 +46,15 @@ end
    )
 end
 
-5.times do |index|
-  Specialty.create!(
-    name: ["Family medicine", "Pediatrician", "Cardiologist", "Pulmonologist", "Dermatologist"].sample
-   )
-end
+
+
+# Create 5 specialty
+Specialty.create(name: 'Family medecine')
+Specialty.create(name: 'Pediatrician')
+Specialty.create(name: 'Cardiologist')
+Specialty.create(name: 'Pulmonologist')
+Specialty.create(name: 'Dermatologist')
+
 
 7.times do |index|
   JoinTableDoctorSpecialty.create!(
